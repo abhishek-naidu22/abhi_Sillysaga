@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABHI SILLYSAGA | Official Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0a0a0a;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    /* Navbar */
+    header {
+      background: rgba(24, 24, 24, 0.95);
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      backdrop-filter: blur(8px);
+      z-index: 1000;
+    }
+    header h1 {
+      color: #ff0000;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #ff2e188;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(135deg, #ff2e88, #9b59b6, #00cfff);
+      background-size: 300% 300%;
+      animation: gradientBG 10s ease infinite;
+    }
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+    .hero img {
+      width: 220px;
+      border-radius: 50%;
+      border: 6px solid white;
+      box-shadow: 0 0 40px rgba(255, 255, 255, 0.6);
+      transition: transform 0.4s ease;
+    }
+    .hero img:hover {
+      transform: scale(1.1) rotate(3deg);
+    }
+    .hero h2 {
+      margin-top: 20px;
+      font-size: 2.5em;
+    }
+    .hero p {
+      font-size: 1.3em;
+      max-width: 600px;
+      margin: auto;
+    }
+    .btn {
+      margin-top: 25px;
+      padding: 14px 30px;
+      background-color: #ff0000;
+      border-radius: 35px;
+      box-shadow: 0 6px 20px rgba(255, 0, 0, 0.6);
+      transition: transform 0.2s ease, background-color 0.3s ease;
+      font-size: 1.2em;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+    .btn:hover {
+      transform: scale(1.07);
+      background-color: #cc0000;
+    }
+
+    /* Photo Gallery */
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    section h2 {
+      font-size: 2em;
+      color: #ff2e88;
+      text-shadow: 0 0 10px rgba(255, 46, 136, 0.8);
+      margin-bottom: 25px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 15px;
+      border: 4px solid rgba(255, 255, 255, 0.7);
+      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6);
+      transition: transform 0.4s, box-shadow 0.4s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 35px rgba(255, 46, 136, 0.8);
+    }
+
+    /* Shorts Section */
+    .shorts-section .videos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+      gap: 25px;
+      justify-items: center;
+      margin-top: 30px;
+    }
+    .shorts-section iframe {
+      width: 315px;
+      height: 560px;
+      border-radius: 15px;
+      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6);
+    }
+
+    /* Footer */
+    footer {
+      background: #181818;
+      padding: 25px;
+      text-align: center;
+      font-size: 0.95em;
+      color: #bbb;
+    }
+    footer a {
+      color: #ff2e88;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    footer a:hover {
+      color: #00cfff;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>ABHI SILLYSAGA</h1>
+    <nav>
+      <a href="#photos">Photos</a>
+      <a href="#shorts">Shorts</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <img src="WhatsApp Image 2025-08-16 at 00.26.02_ca796df2.jpg" alt="Profile Picture">
+    <h2>Welcome to My Official Website</h2>
+    <p>🎬 I create awesome content on YouTube. Subscribe & join the journey!</p>
+    <a href="https://youtube.com/@abhi_silly?si=4VmHGmR9v2WqUeNM" target="_blank" class="btn">Subscribe on YouTube</a>
+  </div>
+
+  <section id="photos">
+    <h2>📸 My Photo Gallery</h2>
+    <div class="gallery">
+      <img src="WhatsApp Image 2025-08-16 at 00.26.06_5983f4ac.jpg" alt="Gallery Photo 1">
+      <img src="WhatsApp Image 2025-08-16 at 00.26.01_b2b93d9f.jpg" alt="Gallery Photo 2">
+      <img src="IMG_20250113_062702.jpg" alt="Gallery Photo 3">
+    </div>
+  </section>
+
+  <section id="shorts" class="shorts-section">
+    <h2>🎞️ My YouTube Shorts</h2>
+    <div class="videos-grid">
+      <!-- Short 1 -->
+      <iframe
+        src="https://www.youtube.com/embed/AVAxXJ68g2U"
+        title="YouTube Short 1"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+
+      <!-- Short 2 -->
+      <iframe
+        src="https://www.youtube.com/embed/6zVBP3Rp32w"
+        title="YouTube Short 2"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+
+      <!-- Short 3 -->
+      <iframe
+        src="https://www.youtube.com/embed/1Kh89JkQFi0"
+        title="YouTube Short 3"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>© 2025 ABHI SILLYSAGA | All Rights Reserved</p>
+    <p>
+      <a href="https://www.instagram.com/abhishek_naidu_22?igsh=MXU0cmpiZDVoODl3MQ==">Instagram</a> |
+      <a href="https://youtube.com/@abhi_silly?si=4VmHGmR9v2WqUeNM">YouTube</a> |
+      <a href="mailto:abhishek.charvik2206@gmail.com">Email</a>
+    </p>
+  </footer>
+
+</body>
+</html>
